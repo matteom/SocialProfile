@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		95120B7528AFCF1F003E54FB /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7428AFCF1F003E54FB /* Previews.swift */; };
 		95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7628AFCF27003E54FB /* CircularImage.swift */; };
+		959D8E1E28C74F4B007BA998 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1B28C74F4B007BA998 /* Debug.xcconfig */; };
+		959D8E1F28C74F4B007BA998 /* Global.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1C28C74F4B007BA998 /* Global.xcconfig */; };
+		959D8E2028C74F4B007BA998 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1D28C74F4B007BA998 /* Release.xcconfig */; };
 		95D0E5B028A2607D0011CE90 /* SocialProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */; };
 		95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5B128A2607D0011CE90 /* ContentView.swift */; };
 		95D0E5B428A2607F0011CE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0E5B328A2607F0011CE90 /* Assets.xcassets */; };
@@ -38,6 +41,10 @@
 /* Begin PBXFileReference section */
 		95120B7428AFCF1F003E54FB /* Previews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		95120B7628AFCF27003E54FB /* CircularImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
+		959D8E1B28C74F4B007BA998 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		959D8E1C28C74F4B007BA998 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
+		959D8E1D28C74F4B007BA998 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		959D8E2128C75254007BA998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95D0E5AC28A2607D0011CE90 /* SocialProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProfileApp.swift; sourceTree = "<group>"; };
 		95D0E5B128A2607D0011CE90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +109,10 @@
 				95D0E5B128A2607D0011CE90 /* ContentView.swift */,
 				95120B7628AFCF27003E54FB /* CircularImage.swift */,
 				95D0E5B328A2607F0011CE90 /* Assets.xcassets */,
+				959D8E1C28C74F4B007BA998 /* Global.xcconfig */,
+				959D8E1B28C74F4B007BA998 /* Debug.xcconfig */,
+				959D8E1D28C74F4B007BA998 /* Release.xcconfig */,
+				959D8E2128C75254007BA998 /* Info.plist */,
 				95D0E5B528A2607F0011CE90 /* Preview Content */,
 			);
 			path = SocialProfile;
@@ -239,6 +250,9 @@
 			files = (
 				95D0E5B728A2607F0011CE90 /* Preview Assets.xcassets in Resources */,
 				95D0E5B428A2607F0011CE90 /* Assets.xcassets in Resources */,
+				959D8E1E28C74F4B007BA998 /* Debug.xcconfig in Resources */,
+				959D8E1F28C74F4B007BA998 /* Global.xcconfig in Resources */,
+				959D8E2028C74F4B007BA998 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +319,7 @@
 /* Begin XCBuildConfiguration section */
 		95D0E5CE28A260800011CE90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959D8E1B28C74F4B007BA998 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -428,6 +443,7 @@
 				DEVELOPMENT_TEAM = DU7ZKD3PP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +473,7 @@
 				DEVELOPMENT_TEAM = DU7ZKD3PP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
