@@ -27,6 +27,7 @@ Temporary Items
 
 # Xcode
 xcuserdata/
+*.xcconfig
 
 # Vim
 
