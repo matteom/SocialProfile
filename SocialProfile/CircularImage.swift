@@ -9,15 +9,16 @@ import SwiftUI
 
 struct CircularImage: View {
 	let image: Image
+	var borderwidth: CGFloat = 3.0
 
     var body: some View {
 		image
 			.resizable()
-			.frame(width: 160.0, height: 160.0)
+			.aspectRatio(contentMode: .fit)
 			.clipShape(Circle())
 			.overlay(
-				Circle().stroke(Color.gray, lineWidth: 5.0))
-    }
+				Circle().stroke(Color.gray, lineWidth: borderwidth))
+	}
 }
 
 struct CircularImage_Previews: PreviewProvider {
