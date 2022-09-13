@@ -13,6 +13,7 @@
 		953E4C8E28C790C200FA5856 /* Config.README.md in Resources */ = {isa = PBXBuildFile; fileRef = 953E4C8D28C790C200FA5856 /* Config.README.md */; };
 		9592590C28C89A8800D710B9 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592590B28C89A8800D710B9 /* Header.swift */; };
 		9599682A28CB68780090F646 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9599682928CB68780090F646 /* User.swift */; };
+		9599682E28CB6AC40090F646 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9599682D28CB6AC40090F646 /* PreviewData.swift */; };
 		959D8E1E28C74F4B007BA998 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1B28C74F4B007BA998 /* Debug.xcconfig */; };
 		959D8E1F28C74F4B007BA998 /* Global.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1C28C74F4B007BA998 /* Global.xcconfig */; };
 		959D8E2028C74F4B007BA998 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1D28C74F4B007BA998 /* Release.xcconfig */; };
@@ -49,6 +50,7 @@
 		953E4C8D28C790C200FA5856 /* Config.README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Config.README.md; sourceTree = "<group>"; };
 		9592590B28C89A8800D710B9 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		9599682928CB68780090F646 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9599682D28CB6AC40090F646 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		959D8E1B28C74F4B007BA998 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		959D8E1C28C74F4B007BA998 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
 		959D8E1D28C74F4B007BA998 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				95120B7428AFCF1F003E54FB /* Previews.swift */,
+				9599682D28CB6AC40090F646 /* PreviewData.swift */,
 				95D0E5B628A2607F0011CE90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -294,6 +297,7 @@
 				95120B7528AFCF1F003E54FB /* Previews.swift in Sources */,
 				95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */,
 				9599682A28CB68780090F646 /* User.swift in Sources */,
+				9599682E28CB6AC40090F646 /* PreviewData.swift in Sources */,
 				95D0E5B028A2607D0011CE90 /* SocialProfileApp.swift in Sources */,
 				9592590C28C89A8800D710B9 /* Header.swift in Sources */,
 				953E4C8C28C78E9800FA5856 /* API.swift in Sources */,
