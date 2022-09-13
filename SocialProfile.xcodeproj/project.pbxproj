@@ -118,10 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */,
-				95D0E5B128A2607D0011CE90 /* ContentView.swift */,
-				95120B7628AFCF27003E54FB /* CircularImage.swift */,
-				9592590B28C89A8800D710B9 /* Header.swift */,
-				9599682328CB439F0090F646 /* Friends.swift */,
+				95EF4C6928D10239008D8DDF /* Views */,
 				953E4C8B28C78E9800FA5856 /* API.swift */,
 				9599682928CB68780090F646 /* User.swift */,
 				95D0E5B328A2607F0011CE90 /* Assets.xcassets */,
@@ -160,6 +157,17 @@
 				95D0E5CC28A260800011CE90 /* SocialProfileUITestsLaunchTests.swift */,
 			);
 			path = SocialProfileUITests;
+			sourceTree = "<group>";
+		};
+		95EF4C6928D10239008D8DDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95D0E5B128A2607D0011CE90 /* ContentView.swift */,
+				95120B7628AFCF27003E54FB /* CircularImage.swift */,
+				9592590B28C89A8800D710B9 /* Header.swift */,
+				9599682328CB439F0090F646 /* Friends.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
