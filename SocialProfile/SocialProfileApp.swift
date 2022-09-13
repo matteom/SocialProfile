@@ -11,7 +11,7 @@ import SwiftUI
 struct SocialProfileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			ContentView(user: .preview)
         }
     }
 }
