@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95120B7528AFCF1F003E54FB /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7428AFCF1F003E54FB /* Previews.swift */; };
+		95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7628AFCF27003E54FB /* CircularImage.swift */; };
 		95D0E5B028A2607D0011CE90 /* SocialProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */; };
 		95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5B128A2607D0011CE90 /* ContentView.swift */; };
 		95D0E5B428A2607F0011CE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0E5B328A2607F0011CE90 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		95120B7428AFCF1F003E54FB /* Previews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
+		95120B7628AFCF27003E54FB /* CircularImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		95D0E5AC28A2607D0011CE90 /* SocialProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProfileApp.swift; sourceTree = "<group>"; };
 		95D0E5B128A2607D0011CE90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */,
 				95D0E5B128A2607D0011CE90 /* ContentView.swift */,
+				95120B7628AFCF27003E54FB /* CircularImage.swift */,
 				95D0E5B328A2607F0011CE90 /* Assets.xcassets */,
 				95D0E5B528A2607F0011CE90 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */,
 				95120B7528AFCF1F003E54FB /* Previews.swift in Sources */,
+				95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */,
 				95D0E5B028A2607D0011CE90 /* SocialProfileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
