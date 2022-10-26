@@ -33,6 +33,9 @@ struct ContentView: View {
 			}
 		}
 		.navigationTitle("Social Profile")
+		.navigationDestination(for: User.self) { user in
+			ContentView(user: user)
+		}
 	}
 }
 

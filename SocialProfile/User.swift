@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct User {
+struct User: Hashable {
 	let name: String
 	let headshot: UIImage
 	let cover: UIImage

@@ -14,8 +14,16 @@ struct SocialProfileApp: App {
 
     var body: some Scene {
         WindowGroup {
-			ContentView(user: .preview)
-				.environmentObject(flagsController)
+			Group {
+				if flagsController.flags.isNavigationEnabled {
+					NavigationStack {
+						ContentView(user: .preview)
+					}
+				} else {
+					ContentView(user: .preview)
+				}
+			}
+			.environmentObject(flagsController)
         }
 		.onChange(of: scenePhase) { newScenePhase in
 			if newScenePhase == .active {
