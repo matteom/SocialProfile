@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950B29D629094090004DB021 /* Bio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B29D529094090004DB021 /* Bio.swift */; };
 		95120B7528AFCF1F003E54FB /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7428AFCF1F003E54FB /* Previews.swift */; };
 		95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95120B7628AFCF27003E54FB /* CircularImage.swift */; };
 		953E4C8C28C78E9800FA5856 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953E4C8B28C78E9800FA5856 /* API.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950B29D529094090004DB021 /* Bio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bio.swift; sourceTree = "<group>"; };
 		95120B7428AFCF1F003E54FB /* Previews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		95120B7628AFCF27003E54FB /* CircularImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		953E4C8B28C78E9800FA5856 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				95D0E5B128A2607D0011CE90 /* ContentView.swift */,
+				950B29D529094090004DB021 /* Bio.swift */,
 				95120B7628AFCF27003E54FB /* CircularImage.swift */,
 				9592590B28C89A8800D710B9 /* Header.swift */,
 				9599682328CB439F0090F646 /* Friends.swift */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950B29D629094090004DB021 /* Bio.swift in Sources */,
 				95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */,
 				9599682428CB439F0090F646 /* Friends.swift in Sources */,
 				95120B7528AFCF1F003E54FB /* Previews.swift in Sources */,

@@ -18,9 +18,15 @@ struct ContentView: View {
 					headshot: Image(uiImage: user.headshot),
 					cover: Image(uiImage: user.cover))
 				Friends(friends: user.friends)
+				Bio(
+					about: user.about,
+					birthday: user.birthday.formatted(date: .abbreviated, time: .omitted),
+					city: user.company,
+					company: user.city)
+				.padding(.top, 16.0)
 #if DEBUG
 				Spacer()
-					.frame(height: 150.0)
+					.frame(height: 60.0)
 				Text("**Base URL**: \(API.baseURL)")
 				Text("**API key**: \(API.key)")
 #endif
