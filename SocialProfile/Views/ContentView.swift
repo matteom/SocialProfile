@@ -21,8 +21,8 @@ struct ContentView: View {
 				Bio(
 					about: user.about,
 					birthday: user.birthday.formatted(date: .abbreviated, time: .omitted),
-					city: user.company,
-					company: user.city)
+					city: user.city,
+					company: user.company)
 				.padding(.top, 16.0)
 #if DEBUG
 				Spacer()
