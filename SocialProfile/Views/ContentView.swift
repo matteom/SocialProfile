@@ -24,6 +24,15 @@ struct ContentView: View {
 					city: user.city,
 					company: user.company)
 				.padding(.top, 16.0)
+				Divider()
+					.padding(.horizontal, 8.0)
+				ForEach(user.posts) { post in
+					VStack {
+						PostView(user: user, post: post)
+						Divider()
+					}
+					.padding()
+				}
 #if DEBUG
 				Spacer()
 					.frame(height: 60.0)

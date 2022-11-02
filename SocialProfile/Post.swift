@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Post: Hashable {
+struct Post: Hashable, Identifiable {
+	let id = UUID()
 	let text: String
 	let date: Date
 }
