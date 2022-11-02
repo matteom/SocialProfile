@@ -16,4 +16,5 @@ struct User: Hashable {
 	let company: String
 	let birthday: Date
 	var friends: [User] = []
+	var posts: [Post] = []
 }
