@@ -19,7 +19,6 @@
 		959D8E1E28C74F4B007BA998 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1B28C74F4B007BA998 /* Debug.xcconfig */; };
 		959D8E1F28C74F4B007BA998 /* Global.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1C28C74F4B007BA998 /* Global.xcconfig */; };
 		959D8E2028C74F4B007BA998 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 959D8E1D28C74F4B007BA998 /* Release.xcconfig */; };
-		95C953F12909828C00B4C92B /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C953F02909828C00B4C92B /* Flags.swift */; };
 		95D0E5B028A2607D0011CE90 /* SocialProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */; };
 		95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5B128A2607D0011CE90 /* ContentView.swift */; };
 		95D0E5B428A2607F0011CE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0E5B328A2607F0011CE90 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		95D0E5C128A260800011CE90 /* SocialProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5C028A260800011CE90 /* SocialProfileTests.swift */; };
 		95D0E5CB28A260800011CE90 /* SocialProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5CA28A260800011CE90 /* SocialProfileUITests.swift */; };
 		95D0E5CD28A260800011CE90 /* SocialProfileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0E5CC28A260800011CE90 /* SocialProfileUITestsLaunchTests.swift */; };
-		95F2D819290A8526008FB1F5 /* FlagsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2D818290A8526008FB1F5 /* FlagsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +59,6 @@
 		959D8E1C28C74F4B007BA998 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
 		959D8E1D28C74F4B007BA998 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		959D8E2128C75254007BA998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		95C953F02909828C00B4C92B /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		95D0E5AC28A2607D0011CE90 /* SocialProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProfileApp.swift; sourceTree = "<group>"; };
 		95D0E5B128A2607D0011CE90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +69,6 @@
 		95D0E5C628A260800011CE90 /* SocialProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D0E5CA28A260800011CE90 /* SocialProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProfileUITests.swift; sourceTree = "<group>"; };
 		95D0E5CC28A260800011CE90 /* SocialProfileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialProfileUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		95F2D818290A8526008FB1F5 /* FlagsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +122,7 @@
 				95D0E5AF28A2607D0011CE90 /* SocialProfileApp.swift */,
 				95EF4C6928D10239008D8DDF /* Views */,
 				953E4C8B28C78E9800FA5856 /* API.swift */,
-				95F2D818290A8526008FB1F5 /* FlagsController.swift */,
 				9599682928CB68780090F646 /* User.swift */,
-				95C953F02909828C00B4C92B /* Flags.swift */,
 				95D0E5B328A2607F0011CE90 /* Assets.xcassets */,
 				953E4C8D28C790C200FA5856 /* Config.README.md */,
 				959D8E1C28C74F4B007BA998 /* Global.xcconfig */,
@@ -317,8 +311,6 @@
 				95D0E5B228A2607D0011CE90 /* ContentView.swift in Sources */,
 				9599682428CB439F0090F646 /* Friends.swift in Sources */,
 				95120B7528AFCF1F003E54FB /* Previews.swift in Sources */,
-				95C953F12909828C00B4C92B /* Flags.swift in Sources */,
-				95F2D819290A8526008FB1F5 /* FlagsController.swift in Sources */,
 				95120B7728AFCF27003E54FB /* CircularImage.swift in Sources */,
 				9599682A28CB68780090F646 /* User.swift in Sources */,
 				9599682E28CB6AC40090F646 /* PreviewData.swift in Sources */,
