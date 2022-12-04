@@ -17,7 +17,8 @@ extension User {
 		city: "Budapest",
 		company: "Acorn Health",
 		birthday: Date(string: "31/12/1960")!,
-		friends: .preview)
+		friends: .preview,
+		posts: [ .preview, .preview, .preview])
 }
 
 extension [User] {
@@ -72,4 +73,10 @@ extension Date {
 		guard let date = formatter.date(from: string) else { return nil }
 		self.init(timeIntervalSinceNow: date.timeIntervalSinceNow)
 	}
+}
+
+extension Post {
+	static let preview = Post(
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		date: Date())
 }
