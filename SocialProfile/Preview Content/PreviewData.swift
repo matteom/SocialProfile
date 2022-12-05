@@ -18,7 +18,12 @@ extension User {
 		company: "Acorn Health",
 		birthday: Date(string: "31/12/1960")!,
 		friends: .preview,
-		posts: [ .preview, .preview, .preview])
+		posts: [ .preview, .preview, .preview],
+		photos: [
+			UIImage(named: "photo-1")!,
+			UIImage(named: "photo-2")!,
+			UIImage(named: "photo-3")!
+		])
 }
 
 extension [User] {
