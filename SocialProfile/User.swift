@@ -17,4 +17,5 @@ struct User: Hashable {
 	let birthday: Date
 	var friends: [User] = []
 	var posts: [Post] = []
+	var photos: [UIImage] = []
 }
