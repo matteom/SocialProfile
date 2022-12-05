@@ -18,6 +18,7 @@ struct ContentView: View {
 					headshot: Image(uiImage: user.headshot),
 					cover: Image(uiImage: user.cover))
 				Friends(friends: user.friends)
+				Photos(user: user)
 				Bio(
 					about: user.about,
 					birthday: user.birthday.formatted(date: .abbreviated, time: .omitted),
