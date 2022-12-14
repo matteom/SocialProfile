@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Model
 
 extension User {
 	static let preview = User(

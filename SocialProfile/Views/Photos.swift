@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Model
 
 struct Photos: View {
 	let user: User

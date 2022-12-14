@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Model
 
 struct PostView: View {
 	let user: User
