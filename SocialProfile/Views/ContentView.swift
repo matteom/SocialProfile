@@ -38,7 +38,10 @@ struct ContentView: View {
 					.padding(.horizontal, 8.0)
 				ForEach(viewModel.user.posts) { post in
 					VStack {
-						PostView(user: viewModel.user, post: post)
+							PostView(
+								user: viewModel.user,
+								post: post,
+								addComment: viewModel.addComment )
 						Divider()
 					}
 					.padding()
@@ -68,6 +71,12 @@ extension ContentView {
 
 		func addFriend() async {
 			return
+		}
+
+		func addComment() {
+			withAnimation {
+				user.posts[0].comments.append([Comment].preview[0])
+			}
 		}
 	}
 }

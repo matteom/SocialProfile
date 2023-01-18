@@ -11,7 +11,7 @@ public struct Post: Hashable, Identifiable {
 	public let id = UUID()
 	public let text: String
 	public let date: Date
-	public let comments: [Comment]
+	public var comments: [Comment]
 
 	public init(text: String, date: Date, comments: [Comment]) {
 		self.text = text
