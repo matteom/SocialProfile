@@ -31,6 +31,9 @@ struct PostView: View {
 				}
 			}
 			Text(post.text)
+			Label("\(post.likes) likes", systemImage: "hand.thumbsup.circle.fill")
+				.foregroundColor(.accentColor)
+				.font(.caption)
 			HStack {
 				Button(action: {}) {
 					Label("Like", systemImage: "hand.thumbsup")

@@ -85,7 +85,8 @@ extension Post {
 	static let preview = Post(
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		date: Date(),
-		comments: .preview)
+		comments: .preview,
+		likes: 7)
 }
 
 extension [Comment] {

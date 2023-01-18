@@ -12,10 +12,12 @@ public struct Post: Hashable, Identifiable {
 	public let text: String
 	public let date: Date
 	public var comments: [Comment]
+	public var likes: Int
 
-	public init(text: String, date: Date, comments: [Comment]) {
+	public init(text: String, date: Date, comments: [Comment], likes: Int) {
 		self.text = text
 		self.date = date
 		self.comments = comments
+		self.likes = likes
 	}
 }
