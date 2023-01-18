@@ -41,7 +41,8 @@ struct ContentView: View {
 							PostView(
 								user: viewModel.user,
 								post: post,
-								addComment: viewModel.addComment )
+								addComment: viewModel.addComment,
+								like: viewModel.like)
 						Divider()
 					}
 					.padding()
@@ -77,6 +78,10 @@ extension ContentView {
 			withAnimation {
 				user.posts[0].comments.append([Comment].preview[0])
 			}
+		}
+
+		func like() {
+			user.posts[0].likes += 1
 		}
 	}
 }
