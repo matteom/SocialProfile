@@ -44,6 +44,10 @@ struct PostView: View {
 				}
 			}
 			.padding(.horizontal)
+			ForEach(post.comments) { comment in
+				CommentView(comment: comment)
+					.padding(.leading, 40.0)
+			}
 		}
 	}
 }

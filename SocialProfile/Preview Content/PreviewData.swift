@@ -84,5 +84,18 @@ extension Date {
 extension Post {
 	static let preview = Post(
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		date: Date())
+		date: Date(),
+		comments: .preview)
+}
+
+extension [Comment] {
+	static let preview = [
+		Comment(owner: [User].preview[0], text: "Ut enim ad minim veniam."),
+		Comment(owner: [User].preview[1], text: "Duis aute irure dolor in reprehenderit."),
+		Comment(owner: [User].preview[2], text: "In voluptate velit esse cillum."),
+	]
+}
+
+extension Comment {
+	static let preview = [Comment].preview[0]
 }
