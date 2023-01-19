@@ -11,6 +11,7 @@ import Model
 struct PostView: View {
 	let user: User
 	let post: Post
+	let addComment: () -> Void
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8.0) {
@@ -35,7 +36,7 @@ struct PostView: View {
 					Label("Like", systemImage: "hand.thumbsup")
 				}
 				Spacer()
-				Button(action: {}) {
+				Button(action: addComment) {
 					Label("Comment", systemImage: "bubble.left")
 				}
 				Spacer()
@@ -44,13 +45,17 @@ struct PostView: View {
 				}
 			}
 			.padding(.horizontal)
+			ForEach(post.comments) { comment in
+				CommentView(comment: comment)
+					.padding(.leading, 40.0)
+			}
 		}
 	}
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-		PostView(user: .preview, post: .preview)
+		PostView(user: .preview, post: .preview, addComment: {})
 			.namedPreview()
     }
 }
