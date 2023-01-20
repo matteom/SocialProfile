@@ -6,24 +6,46 @@
 //
 
 import SwiftUI
+import Model
 
 struct ContentView: View {
-	let user: User
+	@StateObject private var viewModel: ViewModel
+
+	init(user: User) {
+		_viewModel = StateObject(wrappedValue: ViewModel(user: user))
+	}
 
 	var body: some View {
 		ScrollView {
 			VStack {
 				Header(
-					name: user.name,
-					headshot: Image(uiImage: user.headshot),
-					cover: Image(uiImage: user.cover))
-				Friends(friends: user.friends)
+					name: viewModel.user.name,
+					headshot: Image(uiImage: viewModel.user.headshot),
+					cover: Image(uiImage: viewModel.user.cover))
+				Friends(friends: viewModel.user.friends)
+				Buttons(addFriend: {
+					Task { await viewModel.addFriend() }
+				})
+				.padding(.vertical)
+				Photos(user: viewModel.user)
 				Bio(
-					about: user.about,
-					birthday: user.birthday.formatted(date: .abbreviated, time: .omitted),
-					city: user.city,
-					company: user.company)
+					about: viewModel.user.about,
+					birthday: viewModel.user.birthday.formatted(date: .abbreviated, time: .omitted),
+					city: viewModel.user.city,
+					company: viewModel.user.company)
 				.padding(.top, 16.0)
+				Divider()
+					.padding(.horizontal, 8.0)
+				ForEach(viewModel.user.posts) { post in
+					VStack {
+							PostView(
+								user: viewModel.user,
+								post: post,
+								addComment: viewModel.addComment )
+						Divider()
+					}
+					.padding()
+				}
 #if DEBUG
 				Spacer()
 					.frame(height: 60.0)
@@ -35,6 +57,26 @@ struct ContentView: View {
 		.navigationTitle("Social Profile")
 		.navigationDestination(for: User.self) { user in
 			ContentView(user: user)
+		}
+	}
+}
+
+extension ContentView {
+	class ViewModel: ObservableObject {
+		@Published var user: User
+
+		init(user: User) {
+			self.user = user
+		}
+
+		func addFriend() async {
+			return
+		}
+
+		func addComment() {
+			withAnimation {
+				user.posts[0].comments.append([Comment].preview[0])
+			}
 		}
 	}
 }

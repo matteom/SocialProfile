@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Model
 
 extension User {
 	static let preview = User(
@@ -17,7 +18,13 @@ extension User {
 		city: "Budapest",
 		company: "Acorn Health",
 		birthday: Date(string: "31/12/1960")!,
-		friends: .preview)
+		friends: .preview,
+		posts: [ .preview, .preview, .preview],
+		photos: [
+			UIImage(named: "photo-1")!,
+			UIImage(named: "photo-2")!,
+			UIImage(named: "photo-3")!
+		])
 }
 
 extension [User] {
@@ -72,4 +79,23 @@ extension Date {
 		guard let date = formatter.date(from: string) else { return nil }
 		self.init(timeIntervalSinceNow: date.timeIntervalSinceNow)
 	}
+}
+
+extension Post {
+	static let preview = Post(
+		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		date: Date(),
+		comments: .preview)
+}
+
+extension [Comment] {
+	static let preview = [
+		Comment(owner: [User].preview[0], text: "Ut enim ad minim veniam."),
+		Comment(owner: [User].preview[1], text: "Duis aute irure dolor in reprehenderit."),
+		Comment(owner: [User].preview[2], text: "In voluptate velit esse cillum."),
+	]
+}
+
+extension Comment {
+	static let preview = [Comment].preview[0]
 }
