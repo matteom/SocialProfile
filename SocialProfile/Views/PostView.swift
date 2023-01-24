@@ -12,6 +12,7 @@ struct PostView: View {
 	let user: User
 	let post: Post
 	let addComment: () -> Void
+	let like: () -> Void
 	
 	var body: some View {
 		VStack(alignment: .leading, spacing: 8.0) {
@@ -31,8 +32,11 @@ struct PostView: View {
 				}
 			}
 			Text(post.text)
+			Label("\(post.likes) likes", systemImage: "hand.thumbsup.circle.fill")
+				.foregroundColor(.accentColor)
+				.font(.caption)
 			HStack {
-				Button(action: {}) {
+				Button(action: like) {
 					Label("Like", systemImage: "hand.thumbsup")
 				}
 				Spacer()
@@ -55,7 +59,7 @@ struct PostView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-		PostView(user: .preview, post: .preview, addComment: {})
+		PostView(user: .preview, post: .preview, addComment: {}, like: {})
 			.namedPreview()
     }
 }
